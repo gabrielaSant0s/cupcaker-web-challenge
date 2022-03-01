@@ -14,6 +14,7 @@ const Home = (): JSX.Element => {
         <EmptyState type={EmptyStateType.emptyWallet} />
       </Panel>
       <InputQuantity/>
+      
     </div>
   )
 }
