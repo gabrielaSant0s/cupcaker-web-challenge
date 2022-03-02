@@ -4,8 +4,8 @@ import { Panel, Typography, TypographyVariant } from 'components/atoms'
 import { EmptyState, EmptyStateType } from 'components/molecules'
 
 import styles from './styles.module.scss'
-import LetraInicial from 'components/atoms/letra-inicial'
-import SelectCoin from 'components/atoms/select-coin'
+
+import BotaoAdd from 'components/atoms/button-add'
 
 
 const Home = (): JSX.Element => {
@@ -15,9 +15,9 @@ const Home = (): JSX.Element => {
       <Panel className={styles.panel}>
         <EmptyState type={EmptyStateType.emptyWallet} />
       </Panel>
-      
     </div>
   )
 }
+
 
 export default Home
