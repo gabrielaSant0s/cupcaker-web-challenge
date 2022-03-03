@@ -28,7 +28,8 @@ const InputQuantity = (): JSX.Element => {
             id="input-quantity" 
             variant="outlined" 
             type="number" 
-            fullWidth/>
+            fullWidth
+            size="small"/>
         </form>
       </Container>
     )

@@ -29,7 +29,8 @@ const SelectCoin = (): JSX.Element => {
                             setErros({coin:{valido:false,texto:"Coin must be filled!"}})}
                     }}
                 error={!erros.coin.valido}
-                fullWidth>
+                fullWidth
+                size="small">
                     <MenuItem value={10}>Ten</MenuItem>
                 </Select>
                 <FormHelperText sx={{color:"red"}}>{erros.coin.texto}</FormHelperText>

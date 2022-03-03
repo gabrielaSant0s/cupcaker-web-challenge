@@ -5,7 +5,6 @@ import { EmptyState, EmptyStateType } from 'components/molecules'
 
 import styles from './styles.module.scss'
 
-import BotaoAdd from 'components/atoms/button-add'
 
 
 const Home = (): JSX.Element => {

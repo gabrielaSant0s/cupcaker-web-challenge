@@ -3,8 +3,7 @@ import { Avatar, Typography} from "@mui/material";
 
 
 
-const LetraInicial = (): JSX.Element => {
-    const letra="A"
+const LetraInicial = ({letra="A"}): JSX.Element => {
     return(
         <>
             <Avatar 
