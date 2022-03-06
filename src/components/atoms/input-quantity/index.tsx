@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import {Container, InputLabel, TextField} from "@mui/material"
 
 const InputQuantity = (): JSX.Element => {
   const [quantity,setQuantity]=useState("")
   const [erros,setErros]=useState({quantity:{valido:true, texto:""}})
+
+  
+  
     return (
       <Container maxWidth="sm">
         <form 

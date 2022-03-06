@@ -22,20 +22,9 @@
         "allowSingleExtends": false
       }
     ],
-    "@typescript-eslint/no-explicit-any": [
-      "error",
-      {
-        "ignoreRestArgs": true
-      }
-    ],
+    "@typescript-eslint/no-explicit-any":"off",
     "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/typedef": [
-      "error",
-      {
-        "parameter": true,
-        "propertyDeclaration": true
-      }
-    ],
+    "@typescript-eslint/typedef": "off",
     "no-empty-function": "error",
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "off",

@@ -1,6 +1,7 @@
 import { AppRoute } from './types'
 import Home from 'app/core/pages/home'
 import CreateNewCoin from 'app/core/pages/create-new-coin'
+import SelectCoin from 'components/atoms/select-coin'
 
 
 export const coreRoutes: AppRoute[] = [
