@@ -4,6 +4,7 @@ type ConnectType = {
   coin: string,
   quantity: string,
   sendForm: any
+  listaState:string[]
 };
 
 type PropConnectContext = {
@@ -13,6 +14,8 @@ type PropConnectContext = {
   setQuantity: React.Dispatch<React.SetStateAction<string>>,
   sendForm: any,
   setSendForm: React.Dispatch<React.SetStateAction<any>>,
+  listaState: string[],
+  setListaState:React.Dispatch<React.SetStateAction<any>>
   
 };
 
@@ -22,7 +25,9 @@ const DEFAULT_VALUE = {
   quantity:"",
   setQuantity: () => "",
   sendForm: {},
-  setSendForm:() => {[]}
+  setSendForm:() => {[]},
+  listaState: [],
+  setListaState:() => []
 };
 
 
@@ -32,12 +37,13 @@ const ConnectSelectProvider: React.FC = ({children}) => {
   const [coin,setCoin]=useState(DEFAULT_VALUE.coin)
   const [quantity, setQuantity] =useState(DEFAULT_VALUE.quantity)
   const [sendForm, setSendForm] = useState(DEFAULT_VALUE.sendForm)
+  const [listaState,setListaState]=useState(DEFAULT_VALUE.listaState)
 
   console.log("quantity", quantity);
   console.log("select", coin);
 
   return(
-    <ConnectSelect.Provider value={{coin,setCoin,quantity,setQuantity,sendForm,setSendForm}}>
+    <ConnectSelect.Provider value={{coin,setCoin,quantity,setQuantity,sendForm,setSendForm,listaState,setListaState}}>
       {children}
     </ConnectSelect.Provider>
 

@@ -38,7 +38,7 @@ const BotaoAdd = ({label = "ADD NEW COIN"}): JSX.Element => {
 }]
   function formAddNewCoin(coin="", quantity=""){
     
-    const date="07-03-2022"
+    const date="07/03/2022"
     if (coin == "1"){
       const name = dadosAddCoin[0]["value"]["name"]
       const description = dadosAddCoin[0]["value"]["description"]

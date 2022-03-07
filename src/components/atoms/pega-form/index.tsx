@@ -6,12 +6,11 @@ import Home from "app/core/pages/home";
 
 const PegaForm = (): JSX.Element => {
     const{sendForm}=useContext(ConnectSelect)
-
-    const lista = []
-    lista.push(sendForm)
-    console.log("lista sendForm", lista);
+    const {listaState, setListaState} = useContext(ConnectSelect)
     
 
+    console.log(listaState,"listaaaaa");
+    
     return(
     <>
         

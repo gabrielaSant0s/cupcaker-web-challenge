@@ -25,10 +25,10 @@ const RowCoin = (): JSX.Element => {
                 alignItems="flex-start" 
                 sx={{ marginLeft:"5%", width:"25%"}}>
             <Box sx={{marginRight:"10%"}}>
-                <Typography  sx={{fontFamily:"inter", fontWeight:"500", fontSize:"2em"}}>{name}</Typography>
+                <Typography  sx={{fontFamily:"inter", fontWeight:"500", fontSize:"2em", color:"#3E3E3E"}}>{name}</Typography>
             </Box>
             <Box>
-                <Typography  sx={{fontFamily:"inter", fontWeight:"400",fontSize:"1em", marginBottom:"20%"}}>{date}</Typography>
+                <Typography  sx={{fontFamily:"inter", fontWeight:"400",fontSize:"1em", marginBottom:"20%", color:"#3E3E3E"}}>Added {date}</Typography>
             </Box>
             
         </Grid>
