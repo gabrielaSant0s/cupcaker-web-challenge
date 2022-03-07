@@ -5,10 +5,14 @@ import reportWebVitals from './config/reportWebVitals'
 import App from 'app/core/App'
 
 import './index.css'
+import { ConnectSelectProvider } from 'contexts'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ConnectSelectProvider>
+      <App />
+    </ConnectSelectProvider>
+    
     
   </React.StrictMode>,
 

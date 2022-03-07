@@ -14,6 +14,7 @@ import PegaForm from 'components/atoms/pega-form'
 
 
 
+
 const CreateNewCoin = (): JSX.Element => {
     
    const aux = 1
@@ -28,9 +29,8 @@ const CreateNewCoin = (): JSX.Element => {
             <Typography text="Add New Coin" variant={TypographyVariant.h3} />
             <Panel className={styles.panel}>
             
-            <ConnectSelectProvider>
-            <form onSubmit={(event) =>{
-                    event.preventDefault();}}>
+            
+            <form >
 
                 <Grid 
                 container 
@@ -76,8 +76,7 @@ const CreateNewCoin = (): JSX.Element => {
                               
                </Grid>
                </form> 
-                <PegaForm/>
-               </ConnectSelectProvider>
+               
                
             </Panel>
         </div>

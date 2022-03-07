@@ -68,19 +68,25 @@ const BotaoAdd = ({label = "ADD NEW COIN"}): JSX.Element => {
   
 
     return(
+    
+
+    
        <Container maxWidth="sm">
            <Button 
             onClick={(event)=>{
                 setSendForm(formAddNewCoin(coin,quantity))
+                history.push("/")
                 
                 
             }}
            variant="contained" 
-           sx={{bgcolor:"#0341B6",width:"327px",height:"40px"}}>
+           sx={{bgcolor:"#0341B6",width:"327px",height:"40px"}}
+           type="submit">
                <Typography 
-               sx={{fontFamily:"Inter", color:"#FFFFFF", fontWeight: "500"}}>{label}</Typography>
+               sx={{fontFamily:"Inter", color:"#FFFFFF", fontWeight: "500"}} >{label}</Typography>
             </Button>
        </Container>
+
     )
 }
 

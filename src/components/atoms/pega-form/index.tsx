@@ -1,21 +1,21 @@
 import React,{useContext,useEffect, useState} from "react";
 import ConnectSelect from "contexts";
+import Home from "app/core/pages/home";
 
 
 
-const PegaForm = ({label = "ADD NEW COIN"}): JSX.Element => {
+const PegaForm = (): JSX.Element => {
     const{sendForm}=useContext(ConnectSelect)
-    const[formNewC,setFormNewC]=useState({})
 
-    console.log("pegaform", sendForm);
-
-    useEffect(()=>{
-        setFormNewC(sendForm)
-    })
+    const lista = []
+    lista.push(sendForm)
+    console.log("lista sendForm", lista);
     
-    console.log("formNewC", formNewC);
 
-    return(<></>)
+    return(
+    <>
+        
+    </>)
 }
 
 export default PegaForm
