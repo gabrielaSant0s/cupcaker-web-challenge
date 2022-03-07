@@ -10,11 +10,13 @@ import BotaoAdd from 'components/atoms/button-add'
 import LetraInicial from 'components/atoms/letra-inicial'
 import {ConnectSelectProvider} from "../../../../contexts/index"
 import TextCoin from 'components/atoms/text-coin'
+import PegaForm from 'components/atoms/pega-form'
+
 
 
 const CreateNewCoin = (): JSX.Element => {
     
-   
+   const aux = 1
 
     function aoEnviarForm({dados={}}){
         console.log(dados);
@@ -25,11 +27,15 @@ const CreateNewCoin = (): JSX.Element => {
         <div className={styles.container}>
             <Typography text="Add New Coin" variant={TypographyVariant.h3} />
             <Panel className={styles.panel}>
+            
             <ConnectSelectProvider>
+            <form onSubmit={(event) =>{
+                    event.preventDefault();}}>
+
                 <Grid 
                 container 
                 sx={{width:"100%",
-                    height:"100%", 
+                    height:"600px", 
                     justifyContent:"center"}}>
                     <Grid
                     container
@@ -38,6 +44,7 @@ const CreateNewCoin = (): JSX.Element => {
                         marginTop:"10%", 
                         marginRight:"5%",
                         justifyContent:"center"}}>
+                            
                         
                             <SelectCoin/>
 
@@ -65,9 +72,13 @@ const CreateNewCoin = (): JSX.Element => {
                     </Grid>
                     <Box>
                         <BotaoAdd/>
-                    </Box>              
+                    </Box>   
+                              
                </Grid>
+               </form> 
+                <PegaForm/>
                </ConnectSelectProvider>
+               
             </Panel>
         </div>
     )

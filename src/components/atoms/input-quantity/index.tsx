@@ -1,8 +1,10 @@
-import React, { useState} from "react";
+import React, { useState,useContext} from "react";
 import {Container, InputLabel, TextField} from "@mui/material"
+import ConnectSelect from "contexts";
 
 const InputQuantity = (): JSX.Element => {
-  const [quantity,setQuantity]=useState("")
+  const {quantity,setQuantity}=useContext(ConnectSelect)
+
   const [erros,setErros]=useState({quantity:{valido:true, texto:""}})
 
   

@@ -5,7 +5,7 @@ import ConnectSelect from "contexts";
 
 
 const FieldPrice = ({preco=""}): JSX.Element => {
-  const {coin} = useContext(ConnectSelect)
+  const {coin, sendForm, setSendForm} = useContext(ConnectSelect)
 
   const dadosAddCoin = [{
     label: "Bitcoin",
